@@ -4,6 +4,7 @@ import { useParams, useRouter } from 'next/navigation';
 import api, { BACKEND_URL, cleanImageUrl } from '../../../utils/api';
 import { useAuth } from '../../../context/AuthContext';
 import { Star, ShieldCheck, Truck, RotateCcw, ShoppingCart, ImageOff, Glasses, Heart } from 'lucide-react';
+import ReviewSection from '../../../components/ReviewSection';
 
 export default function ProductDetail() {
     const { id } = useParams();
@@ -307,6 +308,8 @@ export default function ProductDetail() {
                     {product.description}
                 </div>
             </div>
+
+            <ReviewSection productId={product._id} />
         </div>
     );
 }
