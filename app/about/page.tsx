@@ -80,6 +80,60 @@ const AboutPage = () => {
                     </div>
                 </div>
 
+                {/* Founders Section */}
+                <div className="space-y-12 py-12">
+                    <div className="text-center space-y-4">
+                        <h3 className="text-3xl font-black italic uppercase tracking-tighter text-gray-900 leading-none">
+                            Meet Our Founders
+                        </h3>
+                        <div className="h-1 w-12 bg-primary mx-auto rounded-full"></div>
+                    </div>
+                    
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        {/* Card 1: Rohan */}
+                        <motion.div 
+                            whileHover={{ y: -10 }}
+                            className="bg-white rounded-[32px] overflow-hidden border border-gray-100 shadow-xl shadow-gray-200/50 group"
+                        >
+                            <div className="aspect-square overflow-hidden">
+                                <img 
+                                    src="/rohan.png" 
+                                    alt="Rohan - Founder & CEO" 
+                                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                />
+                            </div>
+                            <div className="p-8 space-y-2">
+                                <div className="text-primary font-black uppercase tracking-widest text-xs">Founder & CEO</div>
+                                <h4 className="text-2xl font-black text-gray-900">Rohan</h4>
+                                <p className="text-gray-600 font-medium leading-relaxed">
+                                    Handles business operations and customer relations.
+                                </p>
+                            </div>
+                        </motion.div>
+
+                        {/* Card 2: Monis */}
+                        <motion.div 
+                            whileHover={{ y: -10 }}
+                            className="bg-white rounded-[32px] overflow-hidden border border-gray-100 shadow-xl shadow-gray-200/50 group"
+                        >
+                            <div className="aspect-square overflow-hidden">
+                                <img 
+                                    src="/monis.png" 
+                                    alt="Monis - Co-Founder & CTO" 
+                                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                />
+                            </div>
+                            <div className="p-8 space-y-2">
+                                <div className="text-primary font-black uppercase tracking-widest text-xs">Co-Founder & CTO</div>
+                                <h4 className="text-2xl font-black text-gray-900">Monis</h4>
+                                <p className="text-gray-600 font-medium leading-relaxed">
+                                    Lead Developer and Architect of the MERN stack platform.
+                                </p>
+                            </div>
+                        </motion.div>
+                    </div>
+                </div>
+
                 {/* Customer satisfaction Section */}
                 <div className="border-t border-gray-100 pt-12 text-center space-y-6">
                     <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 text-primary mb-2">
